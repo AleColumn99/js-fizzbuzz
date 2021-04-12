@@ -4,6 +4,7 @@
 //se 3n E 5n = FizzBuzz
 
 var print = "";
+var printText = "";
 var num;
 for(var i=0; i<100; i++){
   num = i + 1;
@@ -18,5 +19,7 @@ for(var i=0; i<100; i++){
   }else{
     print = num;
   }
+  printText += print + "<br>";
   console.log(print);
 }
+document.getElementById('list').innerHTML = printText;
